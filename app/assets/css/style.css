@@ -33,6 +33,7 @@ input, textarea {
     background-color:#F4F3F2;
     padding:0.5rem;
     text-align: center;
+    
 }
 
 label {
@@ -52,4 +53,9 @@ label {
     border: 0.125rem solid #F4F3F2;
     background-color: #FFB23D;
     color: #F4F3F2;
+}
+
+#submit-button:hover {
+    background-color: rgba(255,178,61,0.5);
+    
 }
