@@ -6,6 +6,14 @@ This is the Code Institute student template for Gitpod. We have preinstalled all
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
+## Run on local environment (Gitpod aswell)
+
+- You need to have pipenv installed `pip install pipenv`
+- In the main folder type `pipenv install` for the first installation -> Is only needed for the first install like pip
+- To start the virtual environment type in `pipenv shell`
+- Change directory to app
+- Start the flask server by typing `python app.py` (may also be `python3 app.py` depending on the installation)
+
 ## Gitpod Reminders
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
