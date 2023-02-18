@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Charity</h1>
+
+<h2>{{ charity.name }}</h2>
+<h2>{{ charity.slug }}</h2>
+
+<a href="{{ charity.websitelink }}">Link</a>
+{% endblock %}
