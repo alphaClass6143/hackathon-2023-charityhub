@@ -9,13 +9,7 @@
     padding:0.5rem;
     border-radius: 0.5rem;
 }
-#map-feature span{
-    position:absolute;
-    z-index: 1;
-    bottom: 5rem;
-    color:#FFB23D;
-    font-size:2rem;
-}
+
 #worldmap {
     position: absolute;
     object-fit: cover;
