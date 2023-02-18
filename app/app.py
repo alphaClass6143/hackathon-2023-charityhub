@@ -16,14 +16,14 @@ def index():
     return render_template('index.html')
 
 @app.route('/about-us')
-def aboutUs():
+def about_us():
     '''
     Renders about us page
     '''
     return render_template('about_us.html')
 
 @app.route('/contact-us')
-def contactUs():
+def contact_us():
     return render_template('contact_us.html')
 
 @app.route('/search')
@@ -31,7 +31,7 @@ def search():
     '''
     Renders search result
     '''
-    return render_template('search_result.html')
+    return render_template('search/search_result.html')
 
 @app.route('/charity/<slug>')
 def charity(slug):
