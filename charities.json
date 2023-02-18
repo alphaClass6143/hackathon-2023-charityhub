@@ -85,7 +85,7 @@
         "keywords": ["medical aid", "humanitarian", "conflict zones"]
     },
     {
-        "id": "6",
+        "id": "7",
         "charity_name": "The Nature Conservancy",
         "goal": "To conserve the lands and waters on which all life depends.",
         "origin_location": "USA",
@@ -99,7 +99,7 @@
         "keywords": ["conservation", "ecosystems", "biodiversity"]
     },
     {
-        "id": "7",
+        "id": "8",
         "charity_name": "Amnesty International",
         "goal": "To campaign for a world where human rights are enjoyed by all.",
         "origin_location": "UK",
@@ -113,7 +113,7 @@
         "keywords": ["human rights", "justice", "activism"]
     },
     {
-        "id": "8",
+        "id": "9",
         "charity_name": "Rainforest Alliance",
         "goal": "To conserve biodiversity and ensure sustainable livelihoods by transforming land-use practices, business practices, and consumer behavior.",
         "origin_location": "USA",
@@ -127,7 +127,7 @@
         "keywords": ["sustainability", "deforestation"]
     },
     {
-        "id": "9",
+        "id": "10",
         "charity_name": "WaterAid",
         "goal": "To transform the lives of the poorest and most marginalized people by improving access to safe water, sanitation, and hygiene.",
         "origin_location": "UK",
@@ -141,7 +141,7 @@
         "keywords": ["water", "sanitation", "hygiene"]
     },
     {
-        "id": "10",
+        "id": "11",
         "charity_name": "Jane Goodall Institute",
         "goal": "To promote understanding and protection of great apes and their habitats and to build on the legacy of Dr. Jane Goodall.",
         "origin_location": "Austria",
@@ -155,7 +155,7 @@
         "keywords": ["conservation", "primates", "ecosystems"]
     },
     {
-        "id": "11",
+        "id": "12",
         "charity_name": "United Nations Children's Fund (UNICEF)",
         "goal": "To work for the survival, development, and protection of children worldwide.",
         "origin_location": "New York, USA",
@@ -169,7 +169,7 @@
         "keywords": ["children's rights", "healthcare", "education"]
     },
     {
-        "id": "12",
+        "id": "13",
         "charity_name": "The Ocean Cleanup",
         "goal": "To develop and deploy advanced technologies to rid the world's oceans of plastic.",
         "origin_location": "Netherlands",
@@ -183,7 +183,7 @@
         "keywords": ["ocean conservation", "plastic pollution"]
     },
     {
-        "id": "13",
+        "id": "14",
         "charity_name": "Humane Society International",
         "goal": "To protect animals and their habitats worldwide.",
         "origin_location": "USA",
@@ -197,7 +197,7 @@
         "keywords": ["animal welfare", "wildlife conservation"]
     },
     {
-        "id": "14",
+        "id": "15",
         "charity_name": "International Rescue Committee",
         "goal": "To provide humanitarian aid, relief, and resettlement to refugees and victims of conflict worldwide.",
         "origin_location": "USA",
@@ -211,7 +211,7 @@
         "keywords": ["refugee aid", "humanitarian relief", "conflict resolution"]
     },
     {
-        "id": "15",
+        "id": "16",
         "charity_name": "Rainforest Foundation US",
         "goal": "To protect rainforests and the rights of indigenous peoples in Central and South America.",
         "origin_location": "Brooklyn, USA",
@@ -225,7 +225,7 @@
         "keywords": ["rainforest conservation", "indigenous rights"]
     },
     {
-        "id": "16",
+        "id": "17",
         "charity_name": "International Fund for Animal Welfare",
         "goal": "To protect animals and their habitats through rescue, rehabilitation, and advocacy.",
         "origin_location": "Yarmouth Port, USA",
@@ -239,7 +239,7 @@
         "keywords": ["animal welfare", "wildlife conservation"]
     },
     {
-        "id": "17",
+        "id": "18",
         "charity_name": "CARE",
         "goal": "To serve individuals and families in the poorest communities in the world.",
         "origin_location": "USA",
@@ -253,7 +253,7 @@
         "keywords": ["poverty relief", "women's empowerment", "food security"]
     },
     {
-        "id": "18",
+        "id": "19",
         "charity_name": "Oxfam",
         "goal": "To create lasting solutions to poverty, hunger, and social injustice.",
         "origin_location": "UK",
@@ -267,7 +267,7 @@
         "keywords": ["poverty relief", "humanitarian aid", "social justice"]
     },
     {
-        "id": "19",
+        "id": "20",
         "charity_name": "Heifer International",
         "goal": "To work with communities to end world hunger and poverty and to care for the earth.",
         "origin_location": "USA",
@@ -281,7 +281,7 @@
         "keywords": ["sustainable agriculture", "rural development", "poverty relief"]
     },
     {
-        "id": "20",
+        "id": "21",
         "charity_name": "St. Jude Children's Research Hospital",
         "goal": "To advance cures and means of prevention for pediatric catastrophic diseases through research and treatment.",
         "origin_location": "USA",
@@ -295,7 +295,7 @@
         "keywords": ["pediatric cancer research", "children's health", "medical research"]
     },
     {
-        "id": "21",
+        "id": "22",
         "charity_name": "The Hunger Project",
         "goal": "To end hunger and poverty by empowering people to lead lives of self-reliance, meet their own basic needs, and build better futures.",
         "origin_location": "USA",
@@ -309,7 +309,7 @@
         "keywords": ["sustainable development", "community empowerment", "poverty relief"]
     },
     {
-        "id": "22",
+        "id": "23",
         "charity_name": "Global Fund for Women",
         "goal": "To advance women's rights and gender equality by making grants to support women-led organizations around the world.",
         "origin_location": "USA",
@@ -323,7 +323,7 @@
         "keywords": ["women's rights", "gender equality", "grantmaking"]
     },
     {
-        "id": "23",
+        "id": "24",
         "charity_name": "Charity: water",
         "goal": "To bring clean and safe drinking water to people in developing countries.",
         "origin_location": "USA",
@@ -337,7 +337,7 @@
         "keywords": ["clean water", "sanitation", "health"]
     },
     {
-        "id": "24",
+        "id": "25",
         "charity_name": "Wildlife Conservation Society",
         "goal": "To save wildlife and wild places around the globe through science, conservation action, education, and inspiring people to value nature.",
         "origin_location": "USA",
@@ -351,7 +351,7 @@
         "keywords": ["conservation", "wildlife", "biodiversity"]
     },
     {
-        "id": "25",
+        "id": "26",
         "charity_name": "Vitamin Angels",
         "goal": "To provide lifesaving vitamins to mothers and children under five at risk of malnutrition, reducing preventable illness, blindness, and death, to create a healthier world.",
         "origin_location": "USA",
@@ -365,7 +365,7 @@
         "keywords": ["nutrition", "health", "maternal and child health"]
     },
     {
-        "id": "26",
+        "id": "27",
         "charity_name": "Against Malaria Foundation",
         "goal": "To distribute long-lasting insecticidal nets to protect people from malaria in developing countries.",
         "origin_location": "UK",
@@ -379,7 +379,7 @@
         "keywords": ["malaria", "insecticide", "prevention"]
     },
     {
-        "id": "27",
+        "id": "28",
         "charity_charity_name": "RSPB",
         "goal": "To protect and restore wildlife and habitats in the UK.",
         "origin_location": "England",
@@ -393,7 +393,7 @@
         "keywords": ["Birds", "Wildlife", "Conservation"]
     },
     {
-        "id": "28",
+        "id": "29",
         "charity_charity_name": "RSPCA",
         "goal": "To prevent cruelty to animals and promote their welfare.",
         "origin_location": "England",
@@ -407,7 +407,7 @@
         "keywords": ["Animal welfare", "Cruelty prevention"]
     },
     {
-        "id": "29",
+        "id": "30",
         "charity_charity_name": "International literacy foundation",
         "goal": "To eradicate illiteracy and provide educational opportunities to disadvantaged individuals across the world.",
         "origin_location": "USA",
@@ -421,7 +421,7 @@
         "keywords": ["Literacy", "Education"]
     },
     {
-        "id": "30",
+        "id": "31",
         "charity_charity_name": "Royal Flying Doctor Service",
         "goal": "To provide emergency medical and primary health care services to people living in rural and remote areas of Australia.",
         "origin_location": "Australia",
@@ -433,20 +433,6 @@
         "website_link": "https://www.flyingdoctor.org.au/",
         "category": "Society",
         "keywords": ["Healthcare", "Emergency services"]
-    },
-    {
-        "id": "31",
-        "charity_charity_name": "World Wide Fund for Nature Inc.",
-        "goal": "To conserve nature and reduce the most pressing threats to the diversity of life on Earth.",
-        "origin_location": "Switzerland",
-        "region_served": "Global",
-        "founder": "Julian Huxley",
-        "year_founded": 1961,
-        "est_annual_revenue": "$354 million",
-        "wikilink": "https://en.wikipedia.org/wiki/World_Wide_Fund_for_Nature",
-        "website_link": "https://www.worldwildlife.org/",
-        "category": "Environment",
-        "keywords": ["Conservation", "Biodiversity"]
     },
     {
         "id": "32",
@@ -513,7 +499,7 @@
         "founder": "Hugh Evans",
         "year_founded": 2003,
         "annual_revenue": "$15 million",
-        "wikilink": "https://en.wikipedia.org/wiki/Oaktree_(organization)",
+        "wikilink": "https://en.wikipedia.org/wiki/Oaktree_(foundation)",
         "website": "https://www.oaktree.org/",
         "category": "Poverty",
         "keywords": ["youth leadership", "community empowerment"]
@@ -562,20 +548,6 @@
     },
     {
         "id": "40",
-        "charity_name": "International Literacy Foundation",
-        "goal": "To promote literacy and education for all.",
-        "origin location": "USA",
-        "region served": "Global",
-        "founder": "Unknown",
-        "year founded": 1953,
-        "est. annual revenue": "$50 million",
-        "wikilink": "https://en.wikipedia.org/wiki/International_Literacy_Association",
-        "website link": "https://www.literacyworldwide.org/",
-        "category": "Society",
-        "keywords": ["literacy", "education", "reading"]
-    },
-    {
-        "id": "41",
         "charity_name": "The Fred Hollows Foundation",
         "goal": "To end avoidable blindness and improve the health of Indigenous Australians.",
         "origin location": "Australia",
@@ -589,7 +561,7 @@
         "keywords": ["avoidable blindness", "Indigenous health", "eye care"]
     },
     {
-        "id": "42",
+        "id": "41",
         "charity_name": "Reggio Children – Loris Malaguzzi Centre Foundation",
         "goal": "Promoting and defending the rights of children and young people as active citizens.",
         "origin_location": "Italy",
@@ -603,7 +575,7 @@
         "keywords": ["child development", "early education", "participatory learning"]
     },
     {
-        "id": "43",
+        "id": "42",
         "charity_name": "İnsan Hak ve Hürriyetleri İnsani Yardım Vakfı – İHH",
         "goal": "Providing humanitarian aid and assistance to people affected by war, conflict, and natural disasters.",
         "origin_location": "Turkey",
@@ -617,7 +589,7 @@
         "keywords": ["emergency response", "refugee support", "disaster relief"]
     },
     {
-        "id": "44",
+        "id": "43",
         "charity_name": "Humanity & Inclusion",
         "goal": "Assisting people with disabilities and those affected by poverty, conflict, and disasters to live dignified and inclusive lives.",
         "origin_location": "Paris, France",
@@ -631,7 +603,7 @@
         "keywords": ["inclusive development", "prosthetics", "rehabilitation"]
     },
     {
-        "id": "45",
+        "id": "44",
         "charity_name": "Save the Manatee Club",
         "goal": "To protect and conserve endangered manatees and their aquatic habitat for future generations.",
         "origin_location": "USA",
@@ -645,7 +617,7 @@
         "keywords": ["Manatees", "Conservation", "Florida"]
     },
     {
-        "id": "46",
+        "id": "45",
         "charity_name": "Dubai Cares",
         "goal": "To improve access to quality education and opportunities for children and youth in developing countries.",
         "origin_location": "United Arab Emirates",
@@ -659,7 +631,7 @@
         "keywords": ["Children", "Youth", "Development"]
     },
     {
-        "id": "47",
+        "id": "46",
         "charity_name": "Edhi Foundation",
         "goal": "To provide social welfare services, such as emergency medical services, shelter, and food, to the needy in Pakistan and other countries.",
         "origin_location": "Pakistan",
@@ -673,7 +645,7 @@
         "keywords": ["Emergency services", "Shelter", "Food"]
     },
     {
-        "id": "48",
+        "id": "47",
         "charity_name": "The Fritt Ord Foundation",
         "goal": "To promote freedom of expression and quality journalism in Norway and internationally.",
         "origin_location": "Norway",
