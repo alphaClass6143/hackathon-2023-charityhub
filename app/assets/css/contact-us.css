@@ -1,0 +1,27 @@
+input, textarea {
+    border: 0.125rem solid #52B47D;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+#contactus {
+    border:0.25rem solid #52B47D;
+    background-color:#F4F3F2;
+    padding:0.5rem;
+    text-align: center;
+}
+
+label {
+    text-align: center;
+
+}
+#contact-heading h1{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#contact-heading p {
+    margin:0.5rem;
+    text-align:center;
+}
