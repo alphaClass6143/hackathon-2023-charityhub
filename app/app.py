@@ -1,20 +1,28 @@
+import json
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
-app = Flask(__name__, static_folder='assets')
+
 
 # Please create routes
 @app.route('/')
 def index():
     return render_template('index.html')
 
+
 @app.route('/about-us')
 def aboutUs():
-    return render_template('about-us.html')
+    return render_template('about-us.html', page_title='About Us')
+
 
 @app.route('/search')
 def search():
-    return render_template('search_result.html')
+    data = []
+    with open('charities.json', 'r') as json_data:
+        data = json.load(json_data)
+    return render_template('search_result.html', page_title='Search', charity=data)
+
 
 @app.route('/charity/<slug>')
 def charity(slug):
@@ -33,23 +41,28 @@ def charity(slug):
         "keywords": ["animal welfare", "wildlife conservation"],
         "slug": slug
     }
+
     return render_template('charity.html', charity=charity)
+
 
 @app.route('/contact-us')
 def contactUs():
-    return render_template('contact-us.html')
+    return render_template('contact-us.html', page_title='Contact Us')
+
 
 @app.route('/article-1')
 def article1():
-    return render_template('article_1.html')
+    return render_template('article_1.html', page_title='Article 1')
+
 
 @app.route('/article-2')
 def article2():
-    return render_template('article_2.html')
+    return render_template('article_2.html', page_title='Article 2')
+
 
 @app.route('/article-3')
 def article3():
-    return render_template('article_3.html')
+    return render_template('article_3.html', page_title='Article 3')
 
 
 @app.errorhandler(404)
