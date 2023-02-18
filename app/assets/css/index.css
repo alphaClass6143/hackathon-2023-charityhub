@@ -1,4 +1,15 @@
-#Mapfeature {
-    background-image: url("../images/world-map-black.webp");
-    
+#map-feature p{
+    position:absolute;
+    bottom: 1rem;
+    color: #F4F3F2;
+}
+#worldmap {
+    position: absolute;
+    object-fit: contain;
+    width:100%;
+    height:40rem;
+    background-color: #F4F3F2;
+}
+#map-feature {
+    background-color: #F4F3F2;
 }
