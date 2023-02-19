@@ -11,7 +11,6 @@
     gap:2rem;
     border-radius: 10px;
     background-color: var(--primary-color);
-
 }
 
 .contributor-links {
@@ -24,4 +23,8 @@
 .contributor-links a i {
     color:black;
     font-size:2rem;
+}
+
+img {
+    width: 10em;
 }
