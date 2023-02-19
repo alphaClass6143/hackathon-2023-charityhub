@@ -2,51 +2,64 @@
 
 {% block content %}
 
-<body>
-    <div class="container">
-        <!-- Title and keywords -->
-        <div class="row py-4">
-            <div class="col-12 text-center">
-                <h1 class="mb-4">{{charity_details.charity_name}}</h1>
-                <div class="d-flex justify-content-center">
-                    {% for keyword in charity_details.keywords %}
-                    <p style="text-align: center; font-size: 1.2rem; color: #FFFFFF; background-color: #C62828; padding: 10px; margin: 5px; border-radius: 5px;">   {{ keyword }}   </p>
-                    {% endfor %}
-                  </div>
-            </div>
-        </div>
 
-        <!-- Mission statement, location, region, founder, year, and revenue -->
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Goal: </h3>
-                <p>{{charity_details.goal }}</p>
-                <h3>Country of origin: </h3>
-                <p>{{ charity_details.origin_location }}</p>
-                <h3>Area of Activity:</h3>
-                <p>{{ charity_details.region_served }}</p>
-                <h3>Founder: </h3>
-                <p>{{ charity_details.founder }}</p>
-                <h3>Year Founded: </h3>
-                <p>{{ charity_details.year_founded }}</p>
-                <h3>Annual Revenue: </h3>
-                <p>{{ charity_details.annual_revenue }}</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <img src="path/to/logo.png" alt="Charity Name Logo" class="img-fluid my-4">
-                <a href="{{charity_details.wikilink}}" target="_blank" class="btn btn-lg btn-secondary mb-2"><i class="fab fa-wikipedia-w mr-2"></i> Wiki Page</a>
-                <a href="{{charity_details.website_link}}" target="_blank" class="btn btn-lg btn-success"><i class="fas fa-globe-americas mr-2"></i> Website</a>
+<div class="container">
+    <!-- Title and keywords -->
+    <div class="row py-4">
+        <div class="col-12 text-center">
+            <h1 class="mb-4 text-center display-3 display-md-4 display-lg-5"
+                style="color: #20c266; text-shadow: 1px 2px #000000; padding-top: 20px;">
+                {{charity_details.charity_name}}</h1>
+            <div class="d-flex justify-content-center">
+                {% for keyword in charity_details.keywords %}
+                <p
+                    style="text-align: center; font-size: 1.2rem; color: #FFFFFF; background-color: #636262; padding: 10px; margin: 5px; border-radius: 5px; width: 25%">
+                    {{ keyword }}</p>
+                {% endfor %}
             </div>
         </div>
+    </div>
 
-        <!-- 10 divs with fun colors for important facts -->
-        <div class="row py-4">
-            {% for fact in charity_details.description %}
-            <div class="col-md-4 my-2">
-                <div class="bg-secondary text-white py-4 text-center">{{fact}}</div>
+    <!-- Mission statement, location, region, founder, year, and revenue -->
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card bg-light" style="padding: 20px; margin-bottom: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title mb-4" style="color: #000000;">Goal:</h5>
+                    <p class="card-text">{{charity_details.goal}}</p>
+                </div>
             </div>
-            {% endfor %}
         </div>
+        <div class="col-md-5">
+            <div class="card" style="background-color: #f8cfa6; padding: 20px; margin-bottom: 20px;">
+                <div class="card-body">
+                    <p class="card-text"><strong>Country of origin:</strong> {{charity_details.origin_location}}</p>
+                    <p class="card-text"><strong>Area of activity:</strong> {{charity_details.region_served}}</p>
+                    <p class="card-text"><strong>Founder:</strong> {{charity_details.founder}}</p>
+                    <p class="card-text"><strong>Year founded:</strong> {{charity_details.year_founded}}</p>
+                    <p class="card-text"><strong>Annual revenue:</strong> {{charity_details.annual_revenue}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <a href="{{charity_details.wikilink}}" target="_blank" class="btn btn-lg btn-secondary mb-2"
+                style="background-color: #424242; border-color: #000000; padding: 0.5rem 1rem; font-size: 1.25rem; height: 50px"><i
+                    class="fab fa-wikipedia-w mr-2"></i> Wiki Page</a>
+            <a href="{{charity_details.website_link}}" target="_blank" class="btn btn-lg btn-success mb-2"
+                style="background-color: #20c266; border-color: #20c266; padding: 0.5rem 1rem; font-size: 1.25rem; height: 50px"><i
+                    class="fas fa-globe-americas mr-2"></i> Website</a>
+        </div>
+    </div>
+
+    <!-- 10 divs with fun colors for important facts -->
+    <div class="row py-4">
+        {% for fact in charity_details.description %}
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
+            <div class="card bg-dark text-white py-4 text-center" style="padding: 20px;">{{fact}}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 
 
 
