@@ -3,9 +3,63 @@
 {% block styles %}
   {{ super() }}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/article.css') }}">
-{% endblock %}
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  {% endblock %}
 
 
 {% block content %}
-<h1>Article 2</h1>
+<main class="main">
+  <article class="article">
+    <h1>Working from home: reducing your carbon footprint</h1>
+
+    <h2>Reduce excessive emails and large attachments</h2>
+    <p>Although digital communications save paper and printing energy and costs, energy is still used to send, receive and read online documents.</p>
+    <p>Emails acknowledging a communication are often unnecessary and waste energy - an acknowledgement in the subject line of an otherwise blank email is more effective and energy efficient.</p>
+    <p>Messaging apps are often more energy efficient for short informal messages and adding attachments to emails can be very energy inefficient if the document can be accessed on cloud storage.</p>
+    
+    <h2>Change your search search engine to help plant trees</h2>
+    <p>There are concerns that the switch to online and digital working is increasing a hidden energy consumption in the form of web servers. While it is better not to use energy if you don't need to, switching to the <a href="https://www.ecosia.org/?c=en">Ecosia</a> search engine can mean that your searches do have some biodiversity benefits</p>
+    
+    <h2>Switch off</h2>
+    <p>The greenest energy is the energy that is saved! There is no need to leave PCs or monitors on overnight and access is available off campus via the Virtual Desktop Service. Also laptops should be undocked when not in use to avoid drawing power. The first USB port on most docking stations will stay on even with the laptop undocked in case you need to charge anything overnight but remember to unplug it when it is charged. </p>
+    <p>Make sure printers and mobile phone chargers are not left on unnecessarily, especially at night and the weekend as these too will use unnecessary power. </p>
+    <p>Monitors should be set to go to standby when you are not using your PC for ten minutes or more - don't be fooled by screensavers, they do not save energy! Also ensure you are using your PC’s power saving settings.</p>
+    
+    <h2>Energy providers</h2>
+    <p>If you pay your energy bills, have a look at different energy tariffs.</p>
+    <p>By switching supplier or tariff you could find a more ethical option and a cheaper one too (it’s usually simple and free to do so and there are online tools to help you compare prices).</p>
+    <p>There are lots of 100% renewable tariffs out there that are often very affordable. You can sign up to the <a href="https://bigcommunityswitch.co.uk/big-community-switch/info/how-does-it-work">Big Community Switch</a> who run an annual auction as a collective for some UK councils to get a better price but you are not obliged to accept the winning offer.</p>
+    
+    <h2>SMART meters</h2>
+    <p>If you don't have an energy meter why not email your energy provider to ask if one can be installed or to request that a SMET1 meter can be upgraded to SMET2 (a firmware upgrade should be available to do this).</p>
+    <p>The <a href="https://energysavingtrust.org.uk/home-energy-efficiency/smart-meters">Energy Saving Trust's Guide to smart meters</a> has information on the benefits and process involved in getting or upgrading a smart meter.</p>
+    
+    <h2>Unplugging electronics</h2>
+    <p>Do a walk around your house, unplugging any chargers, laptops or equipment which are left on unnecessarily. To ensure UoY laptops don't consume power overnight they should be detached from their docking stations overnight.</p>
+    <p>The majority of chargers and appliances will use some energy when left plugged in or on standby. This energy usage is called 'vampire energy'.</p>
+    <p>The only way to be sure an appliance isn't using energy is to unplug it or switch it off at the plug. The average UK household spends £35 a year powering appliances left on standby.</p>
+    <p>Find out more about <a href="https://energysavingtrust.org.uk/advice/home-appliances/">reducing energy consumption of home appliances</a>.&nbsp;</p>
+    <p>Doing this also makes homes safer, helps technology equipment last longer and could save money on electrical bills. Just make sure you don't unplug essential items like your fridge!</p>
+    
+    <h2>Energy saving advice</h2>
+    <p>There are plenty of steps you can take at home to save energy. Check out some of the online resources and share your findings with your colleagues.</p>
+    <p>Check out these <a href="https://energysavingtrust.org.uk/home-energy-efficiency/energy-saving-quick-wins">Quick tips to save energy</a> from the Energy Saving Trust and these <a href="https://www.connect4climate.org/infographics/5-steps-make-your-home-energy-efficient">5 Steps to make your home energy efficient</a> from Connect4Climate.</p>
+    
+    <h2>Personal carbon footprint</h2>
+    <p>Calculate your personal carbon footprint and examine the steps you can take to reduce it.</p>
+    <p>It is important to cut carbon emissions to keep the global temperature rise from climate change below 1.5°C. Knowing your carbon footprint is an important step in understanding how you can address it.</p>
+    <p>There are plenty of carbon and environmental footprint calculators available such as <a href="https://calculator.carbonfootprint.com/calculator.aspx?tab=4">Carbon Footprint Calculator</a> and <a href="https://footprint.wwf.org.uk/#/">WWF Environmental Calculator.</a></p>
+    
+    <h2>Chill but not too much!</h2>
+    <p>Check your domestic fridge&nbsp;is not set too high - between 3 and 5 degrees is recommended. There are temperature controls on all domestic fridges.</p>
+    <p>This will help reduce the amount of energy used but keep it at a safe temperature to store your food.&nbsp;</p>
+    <p>Other tips to save your fridge from working too hard are letting cooked food cool down first, not leaving the door open unnecessarily, and clearing any frost/ice build-up.</p>
+    
+    <p><strong>Font:</strong></p>
+       <p><a href="https://www.york.ac.uk/staff/working/working-from-home-reducing-your-carbon-footprint/#:~:text=Reduce%20excessive%20emails,ice%20build%2Dup.">www.york.ac.uk</a></p>
+  </article>    
+</main>
 {% endblock %}

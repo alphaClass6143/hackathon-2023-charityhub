@@ -92,33 +92,33 @@ def charity(company_name):
 
 
 # News articles
-@app.route('/article-1')
+@app.route('/news/no-patents-on-seeds')
 def article1():
     '''
     Renders news article 1
     '''
 
-    return render_template('news/article_1.html', page_title='Article 1')
+    return render_template('news/article_1.html', page_title='No patents on seeds')
 
 
 
-@app.route('/article-2')
+@app.route('/news/working-on-home')
 def article2():
     '''
     Renders news article 2
     '''
 
-    return render_template('news/article_2.html', page_title='Article 2')
+    return render_template('news/article_2.html', page_title='Working on home')
 
 
 
-@app.route('/article-3')
+@app.route('/news/carbon-footprint')
 def article3():
     '''
     Renders news article 3
     '''
 
-    return render_template('news/article_3.html', page_title='Article 3')
+    return render_template('news/article_3.html', page_title='Carbon footprint')
 
 
 

@@ -63,9 +63,9 @@
                 <div class="footer-nav-container">
                     <h3>News</h3>
                     <nav class="footer-nav"> 
-                        <a href="{{ url_for('article1') }}">Article 1</a>
-                        <a href="{{ url_for('article2') }}">Article 2</a>
-                        <a href="{{ url_for('article3') }}">Article 3</a>
+                        <a href="{{ url_for('article1') }}">No patents on seeds</a>
+                        <a href="{{ url_for('article2') }}">Working from home</a>
+                        <a href="{{ url_for('article3') }}">Carbon footprint</a>
                     </nav>
                 </div>
                 
@@ -74,7 +74,7 @@
                     <nav class="footer-nav">
                         <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
                         <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
-                        <a href="" aria-label="Opens list of all charities">Charities</a>
+                        <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
                         <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
                     </nav>
                 </div>
