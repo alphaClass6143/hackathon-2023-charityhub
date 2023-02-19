@@ -1,12 +1,12 @@
 input, textarea {
-    border: 0.125rem solid #52B47D;
+    border: 0.125rem solid var(--primary-color);;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
-    width: 80%;
+    /* width: 80%; */
 }
 
 #contactus {
-    border:0.25rem solid #52B47D;
+    border:0.25rem solid var(--primary-color);;
     background-color:#F4F3F2;
     padding:0.5rem;
     text-align: center;
@@ -14,6 +14,7 @@ input, textarea {
 
 label {
     text-align: center;
+    font-size:clamp(1rem, 3vw, 1.5rem);
 
 }
 #contact-heading h1{
@@ -26,35 +27,19 @@ label {
     text-align:center;
 }
 
-input, textarea {
-    border: 0.125rem solid #52B47D;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 80%;
-}
-
-#contactus {
-    border:0.25rem solid #52B47D;
-    background-color:#F4F3F2;
-    padding:0.5rem;
-    text-align: center;
-}
-
-label {
-    text-align: center;
-
-}
-#contact-heading h1{
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-#contact-heading p {
-    margin:0.5rem;
-    text-align:center;
-}
 #submit-button {
     border: 0.125rem solid #F4F3F2;
     background-color: #FFB23D;
-    color: #F4F3F2;
+    color: var(--primary-text-color);
+}
+
+#contact-us-form {
+    display: flex;
+    flex-direction: column;
+
+    border:0.25rem solid var(--primary-color);
+    background-color:#F4F3F2;
+    padding:0.5rem;
+
+    width:clamp(10rem, 95vw, 60rem);
 }

@@ -7,15 +7,19 @@
 
 
 {% block content %}
+<main class="main">
+  <section id="home-header">
+    <div id="home-header-background"></div>
+    <p id="home-header-text">Connecting you to NGOs worldwide</p>
+  </section>
+  <section>
+    <h1>Get to searching your NGO!</h1>
 
-<section id="map-feature">
-    <p>Connecting you to NGOs worldwide</p>
-    <img id="worldmap" src="{{ url_for('static', filename='images/world-map-black.webp') }}" alt="world map">
-    
-    
-
-</section>
-
-
+    <form method="GET" action="{{ url_for('search') }}" class="search-input-group">
+      <input type="search" class="" placeholder="Search" id="query" name="query" aria-label="Search box" required>
+      <button type="submit" class="search-submit-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  </section>
+</main>
 
 {% endblock %}

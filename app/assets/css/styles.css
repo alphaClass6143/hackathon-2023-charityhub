@@ -4,31 +4,24 @@
 
 
 :root {
-    --primary-color: #FFB23D;
+    --primary-color: #20c266;
+    --primary-text-color: black;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #000;
+    color: var(--primary-text-color);
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', sans-serif;
     text-align: center;
-    color:#000;
+    color:var(--primary-text-color);
 }
-
-
-#submit-button {
-    border: 0.125rem solid #F4F3F2;
-    background-color: #FFB23D;
-    color: #F4F3F2;
-}
-
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 2rem;
 }

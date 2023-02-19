@@ -2,36 +2,30 @@
 
 {% block styles %}
   {{ super() }}
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact_us.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact-us.css') }}">
 {% endblock %}
 
 
 {% block content %}
-<main>
-        <div id="contact-heading">
-            <h1 >Get In Touch</h1>
-            <p>Do you want to know more about how you can get involved?<br><em>Complete the form below</em></p>
-        </div>
-        <div id="contactus">
-            <form>
-                <fieldset>
-                    <legend>
-                        <label for="name">Name<br></label>
-                        <input type="text" id="name" name="firstname" required>
-                        <label for="surname"><br>Surname</label>
-                        <input type="text" id="surname" name="surname" required>
-                        <label for="email"><br>Email<br></label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="ngo"><br>Name of NGO<br></label>
-                        <input type="text" id="ngo" name="ngo" placeholder="Which NGO are you interested in?"  required>
-                        <label for="message" ><br>Your message<br></label>
-                        <textarea id="message" rows="4" cols="20" name="message" required></textarea>
-                        <input id="submit-button" value="Submit Form" type="submit">
-                    </legend>
-                </fieldset>
+<main class="main">
+  <div id="contact-heading">
+      <h1 >Get In Touch</h1>
+      <p>Do you want to know more about how you can get involved?<br><em>Complete the form below</em></p>
+  </div>
+  <form id="contact-us-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="firstname" required>
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" name="surname" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="ngo">Name of NGO</label>
+      <input type="text" id="ngo" name="ngo" placeholder="Which NGO are you interested in?"  required>
+      <label for="message" >Your message</label>
+      <textarea id="message" rows="4" cols="20" name="message" required></textarea>
 
-            </form>
+      <input id="submit-button" value="Submit Form" type="submit">
 
-        </div>
-   </main>
+  </form>
+</main>
 {% endblock %}
