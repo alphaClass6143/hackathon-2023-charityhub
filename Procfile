@@ -1,1 +1,1 @@
-web: cd app && pipenv run gunicorn app.py
+web: cd app && pipenv run gunicorn app:app
