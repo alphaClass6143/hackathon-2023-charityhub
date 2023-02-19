@@ -77,7 +77,7 @@ def charity(company_name):
         for object in data:
             if object["url"] == company_name:
                 company = object
-    return "<h2>" + company["charity_name"] + "</h2>"
+    return render_template('charity_details.html', charity_details=company)
 
 
 # News articles
