@@ -9,8 +9,31 @@
 {% block content %}
 <h1>Charity</h1>
 
-<h2>{{ charity.name }}</h2>
-<h2>{{ charity.slug }}</h2>
+<hr>
+<hr>
+<hr>
+
+<!-- For loop to display all the charities in the json file -->
+{% for charity in charities %}
+<div>
+    <h2><a href="/charity/{{charity.url}}">{{ charity.charity_name }}</a></h2>
+    <h6>{{ charity.goal}}</h6>
+    <h6>{{ charity.origin_location}}</h6>
+    <h6>{{ charity.region_served}}</h6>
+    <h6>{{ charity.founder}}</h6>
+    <h6>{{ charity.year_founded}}</h6>
+    <h6>{{ charity.annual_revenue}}</h6>
+    <h6>{{ charity.wikilink}}</h6>
+    <h6>{{ charity.website}}</h6>
+    <h6>{{ charity.category}}</h6>
+    <h6>{{ charity.keywords}}</h6>
+    <hr>
+</div>
+<hr>
+<hr>
+<hr>
+
+{% endfor %}
 
 <a href="{{ charity.websitelink }}">Link</a>
 {% endblock %}
