@@ -118,22 +118,6 @@ def charity(company_name):
     '''
     Renders a given charity
     '''
-    # Get charity here
-
-    # charityobj = {
-    #     "name": "Humane Society International",
-    #     "goal": "To protect animals and their habitats worldwide.",
-    #     "origin_location": "USA",
-    #     "region_served": "Global",
-    #     "founder": "Fred Myers and Helen Jones",
-    #     "year_founded": 1954,
-    #     "annual_revenue": "$200 million",
-    #     "wikilink": "https://en.wikipedia.org/wiki/Humane_Society_International",
-    #     "website_link": "https://www.hsi.org/",
-    #     "category": "Animals",
-    #     "keywords": ["animal welfare", "wildlife conservation"],
-    #     "slug": slug
-    # }
     company = {}
     with open("../charities.json", "r") as json_data:
         data = json.load(json_data)
@@ -141,7 +125,6 @@ def charity(company_name):
             if object["url"] == company_name:
                 company = object
     return render_template('charity_details.html', charity_details=company)
-
 
 
 # News articles
@@ -154,7 +137,6 @@ def article1():
     return render_template('news/article_1.html', page_title='No patents on seeds')
 
 
-
 @app.route('/news/working-on-home')
 def article2():
     '''
@@ -164,7 +146,6 @@ def article2():
     return render_template('news/article_2.html', page_title='Working on home')
 
 
-
 @app.route('/news/carbon-footprint')
 def article3():
     '''
@@ -172,7 +153,6 @@ def article3():
     '''
 
     return render_template('news/article_3.html', page_title='Carbon footprint')
-
 
 
 @app.errorhandler(404)
