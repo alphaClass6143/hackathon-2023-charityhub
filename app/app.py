@@ -56,14 +56,61 @@ def search():
     '''
     Renders search result
     '''
+    # Get query
     query = request.args.get("query")
 
+    # Get JSON
     data = []
     with open("../charities.json", "r") as json_data:
         data = json.load(json_data)
 
-    return render_template('search/search_result.html', page_title='Search', charity_list=data[:10], query=query)
+    # Loop through and add result with weight depending on the priority
+    charity_list = []
 
+    for charity in data:
+        weight = 0
+
+        if charity["category"].lower().__contains__(query.lower()):
+            weight += 100
+
+        for keyword in charity["keywords"]:
+            if keyword.lower().__contains__(query.lower()):
+                weight += 90
+                break
+
+        if charity["charity_name"].lower().__contains__(query.lower()):
+            weight += 70
+
+        if charity["origin_location"].lower().__contains__(query.lower()):
+            weight += 50
+
+        if charity["goal"].lower().__contains__(query.lower()):
+            weight += 30
+
+        if charity["founder"].lower().__contains__(query.lower()):
+            weight += 20
+
+        if weight > 0:
+            charity_list.append({
+                "weight": weight,
+                "charity": charity
+            })
+
+    # Sort list by weight
+    charity_list = sorted(charity_list, key=lambda charity: charity["weight"], reverse=True)
+
+    # Remove weight for the final response
+    charity_response = []
+
+    i = 0
+    for item in charity_list:
+        charity_response.append(item["charity"])
+        if i >= 9:
+            break
+        else:
+            i += 1
+
+    return render_template('search/search_result.html', page_title='Search', charity_list=charity_response, query=query)
 
 
 @app.route('/charity/<company_name>')
