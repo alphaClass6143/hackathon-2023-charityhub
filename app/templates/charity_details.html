@@ -1,6 +1,52 @@
-{% extends base.html %}
+{% extends "base.html" %}
 
 {% block content %}
+
+<body>
+    <div class="container">
+        <!-- Title and keywords -->
+        <div class="row py-4">
+            <div class="col-12 text-center">
+                <h1 class="mb-4">{{charity_details.charity_name}}</h1>
+                <div class="d-flex justify-content-center">
+                    {% for keyword in charity_details.keywords %}
+                    <p style="text-align: center; font-size: 1.2rem; color: #FFFFFF; background-color: #C62828; padding: 10px; margin: 5px; border-radius: 5px;">   {{ keyword }}   </p>
+                    {% endfor %}
+                  </div>
+            </div>
+        </div>
+
+        <!-- Mission statement, location, region, founder, year, and revenue -->
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Goal: </h3>
+                <p>{{charity_details.goal }}</p>
+                <h3>Country of origin: </h3>
+                <p>{{ charity_details.origin_location }}</p>
+                <h3>Area of Activity:</h3>
+                <p>{{ charity_details.region_served }}</p>
+                <h3>Founder: </h3>
+                <p>{{ charity_details.founder }}</p>
+                <h3>Year Founded: </h3>
+                <p>{{ charity_details.year_founded }}</p>
+                <h3>Annual Revenue: </h3>
+                <p>{{ charity_details.annual_revenue }}</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="path/to/logo.png" alt="Charity Name Logo" class="img-fluid my-4">
+                <a href="{{charity_details.wikilink}}" target="_blank" class="btn btn-lg btn-secondary mb-2"><i class="fab fa-wikipedia-w mr-2"></i> Wiki Page</a>
+                <a href="{{charity_details.website_link}}" target="_blank" class="btn btn-lg btn-success"><i class="fas fa-globe-americas mr-2"></i> Website</a>
+            </div>
+        </div>
+
+        <!-- 10 divs with fun colors for important facts -->
+        <div class="row py-4">
+            {% for fact in charity_details.description %}
+            <div class="col-md-4 my-2">
+                <div class="bg-secondary text-white py-4 text-center">{{fact}}</div>
+            </div>
+            {% endfor %}
+        </div>
 
 
 
