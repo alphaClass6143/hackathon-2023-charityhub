@@ -98,7 +98,7 @@ def article1():
     Renders news article 1
     '''
 
-    return render_template('news/article_1.html', page_title='Article 1')
+    return render_template('news/article_1.html', page_title='No patents on seeds')
 
 
 
@@ -108,7 +108,7 @@ def article2():
     Renders news article 2
     '''
 
-    return render_template('news/article_2.html', page_title='Article 2')
+    return render_template('news/article_2.html', page_title='Working on home')
 
 
 
@@ -118,7 +118,7 @@ def article3():
     Renders news article 3
     '''
 
-    return render_template('news/article_3.html', page_title='Article 3')
+    return render_template('news/article_3.html', page_title='Carbon footprint')
 
 
 
