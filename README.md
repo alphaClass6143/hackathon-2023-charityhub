@@ -1,77 +1,125 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1  align="center">Charity Hub</h1>
+
+[View the live project here](#link)
+
+Charity Hub is an app that works as a research tool for those interested in supporting charities. The target audience is people looking to donate to, volunteer at, and keep up-to-date with  specific charities of their choosing. The app functions as a one-stop-location for research into active charities on a global scale; as a searchable and filterable database of information about these charities; and resource for current news and facts about the featured charities. 
+
+[Responsive Mockup Image]
+
+## Table of Contents
+- Contributors
+- User Experience (UX)
+- Features
+- Technologies Used
+- Testing
+- Deployment
+- Credits
+
+## Contributors
+
+[Tony Wilson](https://github.com/Tonywilson1211)
+[Hernan Diaz](https://github.com/hernanpd)
+[Robin Bosch](https://github.com/alphaClass6143)
+[Samar Ziadat](https://github.com/SamarZiadat)
+[Samuel Sadovoi ](https://github.com/SamSswi)
+[Soorya](https://github.com/SooryaGeorge7)
+
+This app was developed as part of Code Institute's Feb 2023 Hackathon for World NGO Day. The app was conceived, designed, developed and deployed by a team of 6 Code Institute students at various stages of learning, over the course of 5 days (February 16th-20th 2023). 
+
+## User experience (UX)
+
+### User Stories
+1.  As a user, I want to learn what this website is about so that I understand its purpose.
+    
+2.  As a user, I want to see the featured charities, so that I can find out which I want to support.
+    
+3.  As a user, I want to know who is responsible for the project, so that I can learn more about them.
+    
+4.  As a user, I want to search for a charity that I have recently heard about, so that I can find out information about it.
+    
+5.  As a user, I want to search for all the charities in a certain category, so that I can support the cause that is important to me.
+    
+6.  As a user, I want to search for charities that have certain keywords attached to them, so that I can search for the charity that is best suited to me.
+
+7. As a user, I want to find out where in the world the charity is based, so that I can make the choice to support either an internationally-based or local charity.
+    
+8.  As a user, I want to find out what I certain charity does, so that I can decide if I want to support them.
+    
+9.  As a user, I want to visit the website of a charity so that if I want to volunteer at or donate directly to a charity, I can get the information I need.
+ 
+10. As a user, I want to stay up-to-date with charities worldwide, so that I might learn about new ones and receive current news about ones I know and perhaps support.
+
+### Owner group
+
+1.  As an owner, I want the user to subscribe to the newsletter, so I can inform them about the newest charities, current news in the world of charities, new features of the app, and redirect traffic back to the app.
+    
+2.  As an owner, I want to promote myself, so that users can find out more about me.
+    
+3.  As an owner, I want to promote the app's social media, where I share information about charities and what is happening in that sector, so that users can stay up to date.
+
+## Design
+
+### Colour Scheme
+
+The app's colour scheme was devised using the colour palette generator [coolors](https://coolors.co/), and is consists of 5 colours: black, white, green, orange and grey. We decided on this colour scheme as it reinforces the friendly, fresh and optimistic branding that is important to the app's tone. It also has colours with appropriate contrast for legibility and accessibility, while also including brighter colours for guiding the user's eye to important features and actions.
+
+### Typography
+
+The Playfair font is the main font used throughout the website. It is crisp and easy to read, which is appropriate for legibility. It is also an interesting, rather than a standard font, encouraging intrigue in the user, encouraging them to engage in research on our app.
+
+### Imagery
+
+The favicon we utilised features open hands and and floating globe. We chose it because it symbolises a charitable generosity that extends worldwide. It was sourced from [SVG Repo](https://www.svgrepo.com/) and generated with [Real Favicon Generator](https://realfavicongenerator.net/).
+
+[Image of favicon]
+
+## Technology
+
+### Technologies Used
+-   [HTML5](https://en.wikipedia.org/wiki/HTML)  - Provides the content and structure for the website.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)  - Provides the styling for the website.
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))  - Provides the functionality of the website.
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/) - Used as the primary framework for the app.
+-   [VSCode](https://code.visualstudio.com/)  - Used to create and edit the website.
+-   [GitHub](https://github.com/)  - Used to develop the website.
+-   [GitBash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))  - Terminal used to push changes to the GitHub repository.
+- [Heroku](https://www.heroku.com/) - Used to host and deploy the website.
+-   [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - Used to test responsiveness and debug.
+- [Google Fonts](https://fonts.google.com/) - Used to import font into the style.css file which is used throughout the project.
+- [Font Awesome](https://fontawesome.com/) - Used throughout the website to add icons for aesthetic and UX purposes.
+- [Coolors](https://coolors.co/) - Used to generate the colour scheme.
+- [SVG Repo](https://www.svgrepo.com/) - Used to source the favicon.
+- [Real Favicon Generator](https://realfavicongenerator.net/)  - Used to generate the favicon.
+
+?? <<<<
+-   [Lucidchart](https://www.lucidchart.com/)  - Used to create the logic flow chart.
+-   [??]()  - Used to host the application data.
+- [Tech Sini](https://techsini.com/multi-mockup/) - Used to generate the mockup of the app.
+- [Fsymbols](https://fsymbols.com/generators/carty/) - Used to generate ASCII art.
+- [Pexels](https://www.pexels.com/) - Used to source free stock images.
+-  [Balsamiq](https://balsamiq.com/)  - Used to create the wire-frame.
+>>>>
+
+### Python Packages?
 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Deployment
+The project was deployed to  [Heroku](https://www.heroku.com/). The deployment process is as follows:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+1.  Log in to Heroku or create an account if required.
 
-## Run on local environment (Gitpod aswell)
+2.  Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app".
 
-- You need to have pipenv installed `pip install pipenv`
-- In the main folder type `pipenv install` for the first installation -> Is only needed for the first install like pip
-- To start the virtual environment type in `pipenv shell`
-- Change directory to app
-- Start the flask server by typing `python app.py` (may also be `python3 app.py` depending on the installation)
+3.  Enter a unique application name and then select your region. Once you are ready, click "Create app".
 
-## Gitpod Reminders
+4.  This will bring you to the project "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button to the right.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+5.  Scroll down to the buildpacks section of the settings page and click the button "Add buildpack". 
 
-`python3 -m http.server`
+6.  Add both "Python" and "node.js" and make sure that Python is above node.js. If it isn't you can just drag it above.
 
-A blue button should appear to click: _Make Public_,
+7.  Scroll back to the top of the settings page, and navigate to the "Deploy" tab. Select Github as the deployment method.
 
-Another blue button should appear to click: _Open Browser_.
+8.  Search for the repository name and click the connect button next to the intended repository.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
+9.  From the bottom of the deploy page select your preferred deployment type. I personally enabled automatic deployments. After that, click "Deploy Branch".

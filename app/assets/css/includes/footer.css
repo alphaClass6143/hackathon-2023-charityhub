@@ -1,0 +1,131 @@
+/*
+#
+# Footer
+#
+*/
+footer {
+    padding:2rem;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:clamp(2rem, 20vw, 3rem);
+
+    background-color: var(--primary-color);
+    width:100%;
+}
+
+
+footer nav a {
+    color:black;
+    transition: 0.3s;
+    padding:0rem 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+#footer-links {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:clamp(0.5rem, 2vw, 4rem);
+}
+
+.social-networks {
+    padding:0;
+    margin:0;
+    display:flex;
+    gap:1rem;
+    list-style-type: none;
+}
+
+hr {
+    width: 100%;
+    background-color: black;
+    height:2px;
+    border:none;
+}
+
+.footer-nav-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.footer-nav-container nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-container a {
+    color:black;
+
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:2rem;
+}
+
+#footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding:0rem 5vw;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    flex-wrap: wrap;
+}
+
+
+.social-networks a {
+    text-decoration: none;
+    padding: 0.1rem;
+    display: flex;
+    width:3rem;
+    height:3rem;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
+
+    background-color: white;
+    
+    transition: 0.3s;
+}
+
+.social-networks a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.social-networks i {
+    font-size: 2rem;
+}
+
+/* shortened icon ids to avoid adblocker */
+#f-ico {
+    color:#1877f2;
+}
+#t-ico {
+    color:#1da1f2;
+}
+#y-ico {
+    color:#ff0000;
+}
+#i-ico {
+    color:#e1306c;
+}

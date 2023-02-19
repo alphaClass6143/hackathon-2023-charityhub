@@ -1,10 +1,41 @@
 {% extends "base.html" %}
 
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/charity.css') }}">
+{% endblock %}
+
+
 {% block content %}
 <h1>Charity</h1>
 
-<h2>{{ charity.name }}</h2>
-<h2>{{ charity.slug }}</h2>
+<hr>
+<hr>
+<hr>
 
-<a href="{{ charity.websitelink }}">Link</a>
+<!-- For loop to display all the charities in the json file -->
+
+
+
+<div class="container-fluid">
+  <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
+    {% for charity in charities %}
+    <div class="col col-sm-6 col-md-4 col-lg-2">
+      <div class="card h-100"  style="background-color: #FFF1F3;">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title" style="margin-bottom: 20px; color: #D81B60; font-size: 24px; font-weight: bold; text-transform: uppercase;"><a href="/charity/{{charity.url}}">{{ charity.charity_name }}</a></h5>
+          <h6 class="card-subtitle mb-2 text-muted">Mission: {{ charity.goal }}</h6>
+          <div class="mt-auto">
+          <p class="card-text" style="background-color: #f5c5c5; padding: 5px 10px;">Outreach: {{ charity.region_served }}</p>
+              <a href="url_for{{charity.website}}" class="card-link"><i class="fa-solid fa-globe"></i></a>
+              <a href="url_for{{charity.wikilink}}" class="card-link"><i class="fa-brands fa-wikipedia-w"></i></a>
+            <p class="badge bg-info text-light d-block text-center mt-3">{{ charity.category }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
 {% endblock %}
