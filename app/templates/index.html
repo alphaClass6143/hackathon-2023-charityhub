@@ -7,5 +7,19 @@
 
 
 {% block content %}
-<h1>Index</h1>
+<main class="main">
+  <section id="home-header">
+    <div id="home-header-background"></div>
+    <p id="home-header-text">Connecting you to NGOs worldwide</p>
+  </section>
+  <section>
+    <h1>Get to searching your NGO!</h1>
+
+    <form method="GET" action="{{ url_for('search') }}" class="search-input-group">
+      <input type="search" class="" placeholder="Search" id="query" name="query" aria-label="Search box" required>
+      <button type="submit" class="search-submit-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  </section>
+</main>
+
 {% endblock %}

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
     <!-- Statics -->
     {% block styles %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -15,7 +18,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     {% endblock %}
 
-    <title>Document</title>
+    {% if page_title %}
+        <title>{{ page_title }} | CharityHub</title>
+    {% else %}
+        <title>CharityHub</title>
+    {% endif %}
 </head>
 
 <body>
@@ -35,7 +42,7 @@
         <nav class="nav">
             <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
             <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
-            <a href="" aria-label="Opens list of all charities">Charities</a>
+            <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
             <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
         </nav>
     </header>
