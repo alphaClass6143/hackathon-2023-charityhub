@@ -1,13 +1,17 @@
 '''
 Main flask setup
 '''
+import os
 import json
+from dotenv import load_dotenv
 from flask import Flask, render_template
 
 # Flask setup
-
 app = Flask(__name__, static_folder='assets')
 
+# Get variables from .env
+# Automatically switches to local dev version without .env
+load_dotenv()
 
 # Static pages
 @app.route('/')
@@ -127,4 +131,7 @@ def page_not_found(e):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    if os.getenv("DEVELOPMENT") == "False":
+        app.run(debug=False)
+    else:
+        app.run(debug=True)
