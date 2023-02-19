@@ -92,7 +92,7 @@ def charity(company_name):
 
 
 # News articles
-@app.route('/article-1')
+@app.route('/news/no-patents-on-seeds')
 def article1():
     '''
     Renders news article 1
@@ -102,7 +102,7 @@ def article1():
 
 
 
-@app.route('/article-2')
+@app.route('/news/working-on-home')
 def article2():
     '''
     Renders news article 2
@@ -112,7 +112,7 @@ def article2():
 
 
 
-@app.route('/article-3')
+@app.route('/news/carbon-footprint')
 def article3():
     '''
     Renders news article 3
