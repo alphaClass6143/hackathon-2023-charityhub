@@ -7,16 +7,14 @@
 
 
 {% block content %}
-<<<<<<< HEAD
-<h1>Search Results</h1>
 
+<h1>Search Results for "{{ query }}"</h1>
 
 <hr>
 <hr>
 <hr>
 
 <!-- For loop to display all the charities in the json file -->
-
 
 <div class="container-fluid">
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-3">
@@ -38,16 +36,9 @@
         {% endfor %}
     </div>
 </div>
-<ul id="results"></ul>
 
 <hr>
 <hr>
 <hr>
 
-<script src="app/assets/js/search_result.js"></script>
-
-=======
-<h1>Search result</h1>
-{{ charity_list }}
->>>>>>> origin
 {% endblock %}
