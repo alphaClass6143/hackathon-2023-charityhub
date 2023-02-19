@@ -26,7 +26,7 @@ def about_us():
     return render_template('about_us.html', page_title='About Us')
 
 
-@app.route('/charity')
+@app.route('/charities')
 def charities():
     '''
     Renders charities page, reads the data from charities.json

@@ -1,0 +1,32 @@
+
+
+#home-header {
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:80vh;
+}
+
+#home-header-text {
+    color: #F4F3F2;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    font-size:clamp(1.5rem, 4vw, 3rem);
+    padding:1rem;
+    margin-bottom:10rem;
+    border-radius: 0.5rem;
+}
+
+#home-header-background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    background: url("../images/world-map-black.webp") no-repeat center center fixed;
+    background-size: cover;
+}
