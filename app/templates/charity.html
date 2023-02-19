@@ -31,9 +31,9 @@
               <div class="mt-auto">
                 <p class="card-text" style="background-color: #F5F5F5; padding: 5px 10px;">Outreach:
                   {{ charity.region_served }}</p>
-                <a href="url_for{{charity.website}}" class="card-link"><i class="fa-solid fa-globe"
+                <a href="{{charity.website_link}}" target="_blank" class="card-link"><i class="fa-solid fa-globe"
                     style="color: #000;"></i></a>
-                <a href="url_for{{charity.wikilink}}" class="card-link"><i class="fa-brands fa-wikipedia-w"
+                <a href="{{charity.wikilink}}" target="_blank" class="card-link"><i class="fa-brands fa-wikipedia-w"
                     style="color: #000;"></i></a>
                 <p class="badge bg-dark text-light d-block text-center mt-3" style="background-color: #000;">
                   {{ charity.category }}</p>
