@@ -19,7 +19,7 @@ def index():
 
 
 @app.route('/about-us')
-def aboutUs():
+def about_us():
     '''
     Renders about us page
     '''
@@ -37,9 +37,14 @@ def charities():
     return render_template('charity.html', page_title='Charity', charities=data)
 
 
+
 @app.route('/contact-us')
-def contactUs():
+def contact_us():
+    '''
+    Renders contact us
+    '''
     return render_template('contact_us.html', page_title='Contact Us')
+
 
 
 @app.route('/search')
@@ -47,7 +52,8 @@ def search():
     '''
     Renders search result
     '''
-    return render_template('search_result.html', page_title='Search')
+    return render_template('search/search_result.html', page_title='Search')
+
 
 
 @app.route('/charity/<company_name>')
@@ -80,13 +86,16 @@ def charity(company_name):
     return render_template('charity_details.html', charity_details=company)
 
 
+
 # News articles
 @app.route('/article-1')
 def article1():
     '''
     Renders news article 1
     '''
-    return render_template('article_1.html', page_title='Article 1')
+
+    return render_template('news/article_1.html', page_title='Article 1')
+
 
 
 @app.route('/article-2')
@@ -94,7 +103,9 @@ def article2():
     '''
     Renders news article 2
     '''
-    return render_template('article_2.html', page_title='Article 2')
+
+    return render_template('news/article_2.html', page_title='Article 2')
+
 
 
 @app.route('/article-3')
@@ -102,7 +113,9 @@ def article3():
     '''
     Renders news article 3
     '''
-    return render_template('article_3.html', page_title='Article 3')
+
+    return render_template('news/article_3.html', page_title='Article 3')
+
 
 
 @app.errorhandler(404)
