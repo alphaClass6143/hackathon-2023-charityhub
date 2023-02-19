@@ -61,21 +61,21 @@ def article1():
     '''
     Renders news article 1
     '''
-    return render_template('article_1.html')
+    return render_template('news/article_1.html')
 
 @app.route('/article-2')
 def article2():
     '''
     Renders news article 2
     '''
-    return render_template('article_2.html')
+    return render_template('news/article_2.html')
 
 @app.route('/article-3')
 def article3():
     '''
     Renders news article 3
     '''
-    return render_template('article_3.html')
+    return render_template('news/article_3.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
