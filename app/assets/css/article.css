@@ -1,0 +1,41 @@
+@import url("includes/reset.css");
+@import url("includes/header.css");
+@import url("includes/footer.css");
+
+
+:root {
+    --primary-color: #FFB23D;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    color:#000;
+}
+
+
+#submit-button {
+    border: 0.125rem solid #F4F3F2;
+    background-color: #FFB23D;
+    color: #F4F3F2;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*-- Container--*/
+
+.content-container {
+    padding: 80px;
+    background-color: #ffb23d8c;
+}
