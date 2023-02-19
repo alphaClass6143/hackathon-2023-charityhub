@@ -602,7 +602,11 @@
     "charity_name": "The Nippon Foundation",
     "goal": "To promote social innovation and to support activities that contribute to the well-being of humanity and the global environment.",
     "origin_location": "Japan",
+<<<<<<< HEAD
     "region_served": "Global",
+=======
+    "region served": "Global",
+>>>>>>> origin
     "founder": "Ryoichi Sasakawa",
     "year_founded": 1962,
     "annual_revenue": "$1.5 billion",
@@ -618,7 +622,11 @@
     "charity_name": "International Union for Conservation of Nature and Natural Resources (IUCN)",
     "goal": "To promote nature conservation and sustainable use of natural resources.",
     "origin_location": "Switzerland",
+<<<<<<< HEAD
     "region_served": "Global",
+=======
+    "region served": "Global",
+>>>>>>> origin
     "founder": "Julius von Haast",
     "year_founded": 1948,
     "annual_revenue": "$125 million",
@@ -635,7 +643,11 @@
     "charity_name": "Li Ka Shing Foundation",
     "goal": "To create a better world through education, healthcare, and research.",
     "origin_location": "Hong Kong",
+<<<<<<< HEAD
     "region_served": "Global",
+=======
+    "region served": "Global",
+>>>>>>> origin
     "founder": "Li Ka-shing",
     "year_founded": 1980,
     "annual_revenue": "$800 million",
@@ -647,11 +659,34 @@
     "description": ["Li Ka Shing Foundation was established in 1980 by Hong Kong businessman and philanthropist Li Ka Shing.", "The Foundation supports projects and programs in education, healthcare and medical research, and social development.", "The Foundation has donated over HK$25 billion to various causes since its establishment.", "The Foundation has supported the establishment of the Li Ka Shing Library at Singapore Management University and the Li Ka Shing Center for Learning and Knowledge at Stanford University.", "The Foundation has also funded the construction of several hospitals and medical centers in Hong Kong and China.", "In response to the COVID-19 pandemic, the Foundation donated HK$100 million to support frontline medical workers and scientific research.", "The Foundation has a strong focus on education and has donated funds to support scholarships, research, and infrastructure at various universities around the world.", "The Foundation has supported disaster relief efforts in regions affected by natural disasters such as earthquakes and typhoons.", "In 2021, the Foundation launched a new initiative to address plastic pollution in the ocean by funding research and solutions to reduce plastic waste.", "Li Ka Shing has pledged to donate one-third of his wealth to charitable causes and is often cited as one of Asia's most generous philanthropists."]
 },
 {
+<<<<<<< HEAD
+=======
+    "id": "40",
+    "charity_name": "International Literacy Foundation",
+    "goal": "To promote literacy and education for all.",
+    "origin_location": "USA",
+    "region served": "Global",
+    "founder": "Unknown",
+    "year founded": 1953,
+    "est. annual revenue": "$50 million",
+    "wikilink": "https://en.wikipedia.org/wiki/International_Literacy_Association",
+    "website link": "https://www.literacyworldwide.org/",
+    "category": "Society",
+    "keywords": ["literacy", "education", "reading"],
+    "url": "internationalLiteracyFoundation",
+    "description": ["The International Literacy Foundation is a UK-based charity that works to eliminate illiteracy across the world.", "The charity operates in 38 countries and works to provide education and literacy skills to both children and adults.", "The International Literacy Foundation has helped over 180,000 people to date and aims to help over one million more by 2025.", "The charity provides literacy programmes, teacher training and books to schools, libraries and communities in need.", "The International Literacy Foundation also partners with local organisations to develop sustainable and community-driven solutions to illiteracy.", "The charity has a strong focus on empowering girls and women through literacy, as they are disproportionately affected by illiteracy.", "The International Literacy Foundation also works to promote multilingual education and preserve indigenous languages.", "The charity's work has been recognised with a number of awards, including the 2020 UNESCO Confucius Prize for Literacy.", "The International Literacy Foundation relies on donations and partnerships with businesses, individuals and organisations to fund its work.", "The charity's ultimate goal is to create a world where every person has the ability to read and write, and can therefore fully participate in their community and society."]
+},
+{
+>>>>>>> origin
     "id": "41",
     "charity_name": "The Fred Hollows Foundation",
     "goal": "To end avoidable blindness and improve the health of Indigenous Australians.",
     "origin_location": "Australia",
+<<<<<<< HEAD
     "region_served": "Australia, Africa, Asia, Pacific",
+=======
+    "region served": "Australia, Africa, Asia, Pacific",
+>>>>>>> origin
     "founder": "Fred Hollows",
     "year_founded": 1992,
     "annual_revenue": "$100 million",

@@ -56,14 +56,61 @@ def search():
     '''
     Renders search result
     '''
+    # Get query
     query = request.args.get("query")
 
+    # Get JSON
     data = []
     with open("../charities.json", "r") as json_data:
         data = json.load(json_data)
 
-    return render_template('search/search_result.html', page_title='Search', charity_list=data[:10], query=query)
+    # Loop through and add result with weight depending on the priority
+    charity_list = []
 
+    for charity in data:
+        weight = 0
+
+        if charity["category"].lower().__contains__(query.lower()):
+            weight += 100
+
+        for keyword in charity["keywords"]:
+            if keyword.lower().__contains__(query.lower()):
+                weight += 90
+                break
+
+        if charity["charity_name"].lower().__contains__(query.lower()):
+            weight += 70
+
+        if charity["origin_location"].lower().__contains__(query.lower()):
+            weight += 50
+
+        if charity["goal"].lower().__contains__(query.lower()):
+            weight += 30
+
+        if charity["founder"].lower().__contains__(query.lower()):
+            weight += 20
+
+        if weight > 0:
+            charity_list.append({
+                "weight": weight,
+                "charity": charity
+            })
+
+    # Sort list by weight
+    charity_list = sorted(charity_list, key=lambda charity: charity["weight"], reverse=True)
+
+    # Remove weight for the final response
+    charity_response = []
+
+    i = 0
+    for item in charity_list:
+        charity_response.append(item["charity"])
+        if i >= 9:
+            break
+        else:
+            i += 1
+
+    return render_template('search/search_result.html', page_title='Search', charity_list=charity_response, query=query)
 
 
 @app.route('/charity/<company_name>')
@@ -71,22 +118,6 @@ def charity(company_name):
     '''
     Renders a given charity
     '''
-    # Get charity here
-
-    # charityobj = {
-    #     "name": "Humane Society International",
-    #     "goal": "To protect animals and their habitats worldwide.",
-    #     "origin_location": "USA",
-    #     "region_served": "Global",
-    #     "founder": "Fred Myers and Helen Jones",
-    #     "year_founded": 1954,
-    #     "annual_revenue": "$200 million",
-    #     "wikilink": "https://en.wikipedia.org/wiki/Humane_Society_International",
-    #     "website_link": "https://www.hsi.org/",
-    #     "category": "Animals",
-    #     "keywords": ["animal welfare", "wildlife conservation"],
-    #     "slug": slug
-    # }
     company = {}
     with open("../charities.json", "r") as json_data:
         data = json.load(json_data)
@@ -94,7 +125,6 @@ def charity(company_name):
             if object["url"] == company_name:
                 company = object
     return render_template('charity_details.html', charity_details=company)
-
 
 
 # News articles
@@ -107,7 +137,6 @@ def article1():
     return render_template('news/article_1.html', page_title='No patents on seeds')
 
 
-
 @app.route('/news/working-on-home')
 def article2():
     '''
@@ -117,7 +146,6 @@ def article2():
     return render_template('news/article_2.html', page_title='Working on home')
 
 
-
 @app.route('/news/carbon-footprint')
 def article3():
     '''
@@ -125,7 +153,6 @@ def article3():
     '''
 
     return render_template('news/article_3.html', page_title='Carbon footprint')
-
 
 
 @app.errorhandler(404)
