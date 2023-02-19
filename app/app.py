@@ -4,7 +4,7 @@ Main flask setup
 import os
 import json
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # Flask setup
 app = Flask(__name__, static_folder='assets')
@@ -56,7 +56,13 @@ def search():
     '''
     Renders search result
     '''
-    return render_template('search/search_result.html', page_title='Search')
+    query = request.args.get("query")
+
+    data = []
+    with open("../charities.json", "r") as json_data:
+        data = json.load(json_data)
+
+    return render_template('search/search_result.html', page_title='Search', charity_list=data[:10], query=query)
 
 
 
