@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:0.5rem;
+    gap:1rem;
     width:100%;
     padding:1rem 3rem;
     background-color: var(--primary-color);
@@ -34,7 +34,8 @@ header > nav > a:hover {
 
 header > nav {
     display: flex;
-    gap:2rem;
+    justify-content: center;
+    gap:0.5rem;
 }
 
 .search-input-group {
@@ -67,4 +68,10 @@ header > nav {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    header nav {
+        gap:2rem;
+    }
+
+    
 }

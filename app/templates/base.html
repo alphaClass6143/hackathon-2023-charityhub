@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <link rel="stylesheet" href="../assets/css/style.css">
-
     <!-- Statics -->
     {% block styles %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -39,12 +36,21 @@
             <button type="submit" class="search-submit-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         
-        <nav class="nav">
-            <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
-            <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
-            <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
-            <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
-        </nav>
+        <!-- <section> -->
+            <!-- <div id="menu-btn" for="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span>Menu</span>
+            </div> -->
+            <nav class="nav" id="main-nav">
+                <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
+                <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
+                <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
+                <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
+            </nav>
+        <!-- </section> -->
+        
     </header>
 
   <!-- Block content -->
@@ -104,5 +110,14 @@
         
     </footer>
 </body>
-
+<script>
+    document.querySelector("#burger-btn").addEventListener("click", function() {
+        if(document.querySelector("#main-nav").classList.contains("active")) {
+            document.querySelector("#main-nav").classList.remove("active")
+        }
+        else {
+            document.querySelector("#main-nav").classList.add("active")
+        }
+    })
+</script>
 </html>
