@@ -1,10 +1,10 @@
 <h1  align="center">Charity Hub</h1>
 
-[View the live project here](https://charityhub.herokuapp.com/)
+[View the live project here.](https://charityhub.herokuapp.com/)
 
-Charity Hub is an app that works as a research tool for those interested in supporting charities. The target audience is people looking to donate to, volunteer at, and keep up-to-date with specific charities of their choosing. The app functions as a one-stop-location for research into active charities on a global scale; as a searchable and filterable database of information about these charities; and resource for current news and facts about the featured charities.
+Charity Hub is an app that works as a research tool for those interested in supporting charities. The target audience is people looking to donate to, volunteer at, and keep up-to-date with specific charities of their choosing. The app functions as a one-stop-location for research into active charities on a global scale; as a searchable and filterable database of information about these charities; and as a resource for current news and facts about the featured charities.
 
-[Responsive Mockup Image]
+![Mockup](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/mock-up.png?raw=true)
 
 ## Table of Contents
 - Contributors
@@ -17,11 +17,11 @@ Charity Hub is an app that works as a research tool for those interested in supp
 - Credits
 
 ## Contributors
-[Tony Wilson](https://github.com/Tonywilson1211)
-[Hernan Diaz](https://github.com/hernanpd)
-[Robin Bosch](https://github.com/alphaClass6143)
-[Samar Ziadat](https://github.com/SamarZiadat)
-[Samuel Sadovoi ](https://github.com/SamSswi)
+[Tony Wilson](https://github.com/Tonywilson1211),
+[Hernan Diaz](https://github.com/hernanpd),
+[Robin Bosch](https://github.com/alphaClass6143),
+[Samar Ziadat](https://github.com/SamarZiadat),
+[Samuel Sadovoi ](https://github.com/SamSswi),
 [Soorya](https://github.com/SooryaGeorge7)
 
 This app was developed as part of Code Institute's Feb 2023 Hackathon for World NGO Day. The app was conceived, designed, developed and deployed by a team of 6 Code Institute students at various stages of learning, over the course of 5 days (February 16th-20th 2023).
@@ -73,58 +73,71 @@ We used several tools for project management during this hackathon:
 ### Wireframes
 Three project contributors were assigned the task of creating and presenting wireframes to the group. We each created wireframes with varying technologies, and presented them to the group on a slack huddle. As a team, we picked our favourite features from all three presentation and made sure they met the user and owner group criteria. As a result, a blend of these wireframes were used as a design for the project.
 
+![Paint Wireframes](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/wireframes2.jpg?raw=true)
+
+![Balsamiq Wireframe](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/wireframes3.png?raw=true)
+
+![Figma Wireframe](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/wireframes1.png?raw=true)
+
 ### Search Functionality
 As a group we decided on the logic of the categories and keywords that would be used to present different charities to the user. We made sure this was in line with our user stories. 
 
 ### Colour Scheme
+The app's colour scheme was devised using the colour palette generator [coolors](https://coolors.co/), and it consists of 5 colours: black, white, green, orange and grey. We were inspired by this colour scheme as it reinforces the friendly, fresh and optimistic branding that is important to the app's tone. It also has colours with appropriate contrast for legibility and accessibility, while also including brighter colours for guiding the user's eye to important features and actions. We did change the tones of these colours slightly from the original scheme to achieve a more vibrant look, as the original scheme felt slightly too muted upon deployment.
 
-The app's colour scheme was devised using the colour palette generator [coolors](https://coolors.co/), and is consists of 5 colours: black, white, green, orange and grey. We were inspired by this colour scheme as it reinforces the friendly, fresh and optimistic branding that is important to the app's tone. It also has colours with appropriate contrast for legibility and accessibility, while also including brighter colours for guiding the user's eye to important features and actions. We did change the tones of these colours slightly from the original scheme to achieve a slightly more vibrant look, as the original coolors felt slightly to muted for the fresh vibrant branding we were trying to achieve.
+![Colour scheme](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/colour-scheme.png?raw=true)
 
 ### Typography
 
-The Playfair font is the main font used throughout the website. It is crisp and easy to read, which is appropriate for legibility. It is also an interesting, rather than a standard font, encouraging intrigue in the user, encouraging them to engage in research on our app.
+The Playfair font is the main font used throughout the website. It is crisp and easy to read, which is appropriate for legibility. It is also an interesting rather than a standard font, encouraging intrigue in the user and encouraging them to engage further in research on our app.
 
 ### Imagery
 
-The favicon we utilised is a sprouting plant. We chose it because it symbolises the fresh optimistic outlook of our branding and makes sense with our colour scheme. It was sourced from 
+The favicon we utilised is a sprouting plant. We chose it because it symbolises the fresh optimistic outlook of our branding and makes sense with our colour scheme. 
 
 ## Features
 
 App features and the user stories/owner group they satisfy:
 
 ### Header 
+![Header](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/header.png?raw=true)
 <b>Satisfies:</b>
 - As a user I want to be able to navigate the app easily and intuitively so I can use it efficiently. 
 - As a user, I want to learn what this website is about so that I understand its purpose.
 
 ### Home Page
+![Home](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/home.png?raw=true)
 <b>Satisfies:</b>
 - As a user I want to be able to navigate the app easily and intuitively so I can use it efficiently. 
 - As a user, I want to learn what this website is about so that I understand its purpose.
 
 ### Footer
+![Footer](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/footer.png?raw=true)
 <b>Satisfies:</b>
 - As a user I want to be able to navigate the app easily and intuitively so I can use it efficiently. 
-- - As a user, I want to learn what this website is about so that I understand its purpose.
+- As a user, I want to learn what this website is about so that I understand its purpose.
 - As an owner, I want to promote the app's social media, where I share information about charities and what is happening in that sector, so that users can stay up to date.
 
 ### About page
+![About page](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/about.png?raw=true)
 <b>Satisfies:</b>
 - As a user, I want to learn what this website is about so that I understand its purpose.
 - As a user, I want to know who is responsible for the project, so that I can learn more about them.
 - As an owner, I want to promote myself, so that users can find out more about me.
 
 ### Search Functionality
+![Search](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/search.png?raw=true)
 <b>Satisfies:</b>
 - As a user, I want to search for a charity that I have recently heard about, so that I can find out information about it.
 - As a user, I want to search for all the charities in a certain category, so that I can support the cause that is important to me.
 - As a user, I want to search for charities that have certain keywords attached to them, so that I can search for the charity that is best suited to me.
-- - As a user, I want to find out what I certain charity does, so that I can decide if I want to support them.
+- As a user, I want to find out what I certain charity does, so that I can decide if I want to support them.
 - As a user, I want to visit the website of a charity so that if I want to volunteer at or donate directly to a charity, I can get the information I need.
 - As a user, I want to stay up-to-date with current news related to the work that charities do so I can stay informed.
-- - As a user I want to be able to navigate the app easily and intuitively so I can use it efficiently. 
+- As a user I want to be able to navigate the app easily and intuitively so I can use it efficiently. 
 
 ### Charities Page 
+![Charities](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/charities.png?raw=true)
 <b>Satisfies:</b>
 - As a user, I want to see the featured charities, so that I can find out which I want to support.
 - As a user, I want to find out where in the world the charity does outreach, so that I can make the choice to support either an international or local cause.
@@ -133,15 +146,18 @@ App features and the user stories/owner group they satisfy:
 - As a user, I want to stay up-to-date with current news related to the work that charities do so I can stay informed.
 
 ### Individual Charity Profiles
+![Charity Profiles](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/charity-profile.png?raw=true)
 <b>Satisfies:</b>
 - As a user, I want to find out what I certain charity does, so that I can decide if I want to support them.
 - As a user, I want to visit the website of a charity so that if I want to volunteer at or donate directly to a charity, I can get the information I need.
 - As a user, I want to stay up-to-date with current news related to the work that charities do so I can stay informed.
 
 ### Contact Page
+![Contact](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/contact.png?raw=true)
 - As a user I would like to get in touch with the owners of the app so that I can ask queries or request a charity is added to their database.
 
 ### Blog Posts
+![Blogs](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/blogs.png?raw=true)
 <b>Satisfies:</b>
 - As a user, I want to stay up-to-date with current news related to the work that charities do so I can stay informed.
 - As a user, I want to find out what I certain charity does, so that I can decide if I want to support them.
@@ -177,7 +193,7 @@ App features and the user stories/owner group they satisfy:
 ## Testing
 
 ### Validator Testing
-The W3C Markup Validator, CSS Validator Services, JSHint, PEP8 were used to validate the project throughout development and at the stage of deployment to ensure there were no syntax errors in the project. 
+The W3C Markup Validator, CSS Validator Services, JSHint, and PEP8 were used to validate the project throughout development and at the stage of deployment to ensure there were no syntax errors in the project. 
 
 ### Lighthouse Test
 We tested the website via the Lighthouse tool at the point of deployment and our results for the home page were:
@@ -198,10 +214,10 @@ SEO: 98
 All 6 contributors of the project conducted manual testing on all user journeys through the app at the point of deployment. Issues were raised in our slack channel and were resolved before submission.
 
 ### User Stories and Owner Requirements
-All user stories and owner group requirements are satisfied by the features developed and deployed on the website. This was achieved through design that centre's the user and owner groups needs. 
+All user stories and owner group requirements are satisfied by the features developed and deployed on the website. This was achieved through design that centre's the user and owner groups needs. This is demonstrated in the 'Features' section of this readme.
 ### Browser Compatibility
 Testing has been carried out on the following browsers :
-Microsoft Edge, Google Chrome, Mozila Firefox, Safari, Opera
+Microsoft Edge, Google Chrome, Mozila Firefox, Safari, Opera.
 ### Responsive Design
 We can confirm this project is responsive and functions on all standard screen sizes using devtools device toolbar, and by testing on all our individual devices.
 
@@ -297,8 +313,6 @@ python app.py
 - This online formatter was used to beautify code: https://beautifier.io/
 
 - Bootstrap documentation, Stack Overflow and chatGPT was used to help style html code
-
-### Media
 
 ### Acknowledgments
 Thank you to the Code Institute Hack Team who organised this Hackathon.
