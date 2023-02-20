@@ -100,26 +100,64 @@ The favicon we utilised features open hands and and floating globe. We chose it 
 -  [Balsamiq](https://balsamiq.com/)  - Used to create the wire-frame.
 >>>>
 
-### Python Packages?
+### Python Packages
 
+- flask
+- gunicorn
+- python-dotenv
 
 ## Deployment
-The project was deployed to  [Heroku](https://www.heroku.com/). The deployment process is as follows:
 
-1.  Log in to Heroku or create an account if required.
+You can fork the repository by following these steps:
 
-2.  Click the button labeled New from the dashboard in the top right corner, just below the header and then select "Create new app".
+1. Go to the repository on GitHub  
+2. Click on the "Fork" button in the upper right hand corner
 
-3.  Enter a unique application name and then select your region. Once you are ready, click "Create app".
+You can clone the repository by following these steps:
 
-4.  This will bring you to the project "Deploy" tab. From here, click the "Settings" tab and scroll down to the "Config Vars" section and click on "Reveal Config Vars". In the KEY input field, enter "PORT" and in the VALUE input field, enter "8000". After that, click the "Add" button to the right.
+1. Go to the repository on GitHub
+2. Locate the "Code" button above the list of files and click it  
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the "copy" button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone <https://github.com/YOUR-USERNAME/YOUR-REPOSITORY>)  
+7. Press Enter to create your local clone.
 
-5.  Scroll down to the buildpacks section of the settings page and click the button "Add buildpack". 
+### Local
 
-6.  Add both "Python" and "node.js" and make sure that Python is above node.js. If it isn't you can just drag it above.
+1. Follow the clone steps and go to step 2
+2. Run the following command to install all required packages
 
-7.  Scroll back to the top of the settings page, and navigate to the "Deploy" tab. Select Github as the deployment method.
+```
+pipenv install
+```
 
-8.  Search for the repository name and click the connect button next to the intended repository.
+3. Create a .env file and add the following keys to it:
+    - DEVELOPMENT --> Is optional, default without it is True
 
-9.  From the bottom of the deploy page select your preferred deployment type. I personally enabled automatic deployments. After that, click "Deploy Branch".
+4. Enter the following commands to start up the server:
+
+```
+pipenv shell
+cd app
+python app.py
+```
+
+5. The package can now be accessed locally under [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+
+### Heroku
+
+1. Create an account at Heroku and login.
+2. Click the "Create new app" button on your dashboard, add app name and region.
+3. Click on the "Create app" button.
+4. Click on the "Settings" tab.
+5. Under "Config Vars" click "Reveal Config Vars" add the following keys:
+    - DEVELOPMENT --> Is optional but should be set to False, default without it is True
+6. Under "Buildpacks" click "Add buildpack" and then choose "Python" first and click "Save changes"
+7. Go to the "Deploy" tab and choose GitHub as your deployment method
+8. Connect your GitHub account
+9. Enter your repository name, search for it and click connect when it appears below.
+10. In the manual deploy section click "Deploy branch"
+11. Optional: You can enable automatic deploys if you want the app to automatically update
+
+
