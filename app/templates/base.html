@@ -29,27 +29,18 @@
             <i class="fa-solid fa-seedling logo-icon"></i>
             <h1>CharityHub</h1>
         </div>
-        
 
         <form method="GET" action="{{ url_for('search') }}" class="search-input-group">
             <input type="search" class="" placeholder="Search" id="query" name="query" aria-label="Search box" required>
             <button type="submit" class="search-submit-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         
-        <!-- <section> -->
-            <!-- <div id="menu-btn" for="menu-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span>Menu</span>
-            </div> -->
-            <nav class="nav" id="main-nav">
-                <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
-                <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
-                <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
-                <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
-            </nav>
-        <!-- </section> -->
+        <nav class="nav" id="main-nav">
+            <a href="{{ url_for('index') }}" aria-label="Opens home page">Home</a>
+            <a href="{{ url_for('about_us') }}" aria-label="Opens about us page">About Us</a>
+            <a href="{{ url_for('charities') }}" aria-label="Opens list of all charities">Charities</a>
+            <a href="{{ url_for('contact_us') }}" aria-label="Opens contact us page ">Contact Us</a>
+        </nav>
         
     </header>
 
@@ -110,14 +101,4 @@
         
     </footer>
 </body>
-<script>
-    document.querySelector("#burger-btn").addEventListener("click", function() {
-        if(document.querySelector("#main-nav").classList.contains("active")) {
-            document.querySelector("#main-nav").classList.remove("active")
-        }
-        else {
-            document.querySelector("#main-nav").classList.add("active")
-        }
-    })
-</script>
 </html>

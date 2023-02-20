@@ -1,15 +1,25 @@
+.main {
+    margin:2rem 0rem 4rem 0rem;
+    gap:2rem;
+    padding:2rem;
+}
+
 #about-team-container {
     display:flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap:3rem;
+    gap:2rem;
+    width:clamp(10rem, 90vw, 80rem);
 }
 
 .contributor-profile {
     display:flex;
+    width:20rem;
+    align-items: center;
     flex-direction: column;
-    padding:1rem;
+    padding:2rem;
     gap:2rem;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: var(--primary-color);
 }
 
@@ -17,14 +27,64 @@
     display: flex;
     width:100%;
     justify-content: center;
-    gap:1rem;
+    gap:2rem;
 }
+
+
 
 .contributor-links a i {
     color:black;
-    font-size:2rem;
+    font-size:2.5rem;
 }
 
 img {
-    width: 10em;
+    width: 13rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* this is something hidden and you shouldn't really look at it */
+/* ok I will say it: this is a profile spinner as a little surprise whoeever wants it */
+/* .contributor-profile:nth-child(1) img {
+    transition: 0.5s;
+}
+
+.contributor-profile:nth-child(1) img:hover {
+    transition: 0.5s;
+    transform:rotate(180deg);
+} */
+
+/* this definetly isn't the animation that makes one profile picture spin out of the screen when clicked... */
+@keyframes profile-madness  {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(1000%) rotate(1440deg);
+
+    }
+    51% {
+        transform: translateY(-700%) 
+    }
+    95% {
+        transform: translateX(0%) 
+    }
+    97% {
+        transform: translateY(5%) 
+    }
+    99% {
+        transform: translateY(1%) 
+    }
+    100% {
+        transform: translateY(0%) 
+    }
 }
