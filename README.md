@@ -90,7 +90,7 @@ The app's colour scheme was devised using the colour palette generator [coolors]
 
 ### Typography
 
-The Playfair font is the main font used throughout the website. It is crisp and easy to read, which is appropriate for legibility. It is also an interesting rather than a standard font, encouraging intrigue in the user and encouraging them to engage further in research on our app.
+The "Helvetica Neue" font is the main font used throughout the website. It is crisp and easy to read, which is appropriate for legibility. It is also an interesting rather than a standard font, encouraging intrigue in the user and encouraging them to engage further in research on our app. Helvetica, Arial, and sans-serif are the fall-back fonts.
 
 ### Imagery
 
