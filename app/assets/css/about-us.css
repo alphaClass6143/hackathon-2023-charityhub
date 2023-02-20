@@ -52,16 +52,49 @@ img {
 
 
 
+
 /* this is something hidden and you shouldn't really look at it */
 /* ok I will say it: this is a profile spinner as a little surprise whoeever wants it */
-/* .contributor-profile:nth-child(1) img {
+/* tony likes to rotate */
+.contributor-profile:nth-child(1) img {
     transition: 0.5s;
 }
 
 .contributor-profile:nth-child(1) img:hover {
     transition: 0.5s;
     transform:rotate(180deg);
-} */
+}
+
+/* Not samars bouncing profile picture */
+.contributor-profile:nth-child(4) img {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.contributor-profile:nth-child(4) img:hover {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+    30% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    80% {
+      transform: translateY(-5%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
 
 /* this definetly isn't the animation that makes one profile picture spin out of the screen when clicked... */
 @keyframes profile-madness  {

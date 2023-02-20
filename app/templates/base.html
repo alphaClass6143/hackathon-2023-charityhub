@@ -31,10 +31,10 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">
+        <a href="{{ url_for('index') }}" class="logo">
             <i class="fa-solid fa-seedling logo-icon"></i>
             <h1>CharityHub</h1>
-        </div>
+        </a>
 
         <form method="GET" action="{{ url_for('search') }}" class="search-input-group">
             <input type="search" class="" placeholder="Search" id="query" name="query" aria-label="Search box" required>
@@ -57,10 +57,10 @@
     <!-- Footer-->
     <footer>
         <div id="footer-main">
-            <div class="logo">
+            <a href="{{ url_for('index') }}" class="logo">
                 <i class="fa-solid fa-seedling logo-icon"></i>
                 <h1>CharityHub</h1>
-            </div>
+            </a>
     
             <div class="footer-nav-list">
                 <div class="footer-nav-container">
