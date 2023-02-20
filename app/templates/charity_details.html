@@ -2,7 +2,6 @@
 
 {% block content %}
 
-
 <div class="container">
     <!-- Title and keywords -->
     <div class="row py-4">
@@ -50,8 +49,7 @@
                     class="fas fa-globe-americas mr-2"></i> Website</a>
         </div>
     </div>
-
-    <!-- 10 divs with fun colors for important facts -->
+    <!-- 10 divs with important facts -->
     <div class="row py-4">
         {% for fact in charity_details.description %}
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 my-2">
@@ -60,7 +58,5 @@
         {% endfor %}
     </div>
 </div>
-
-
 
 {% endblock %}
