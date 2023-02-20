@@ -21,14 +21,15 @@ Charity Hub is an app that works as a research tool for those interested in supp
 [Hernan Diaz](https://github.com/hernanpd),
 [Robin Bosch](https://github.com/alphaClass6143),
 [Samar Ziadat](https://github.com/SamarZiadat),
-[Samuel Sadovoi ](https://github.com/SamSswi),
-[Soorya](https://github.com/SooryaGeorge7)
+[Samuel Sadovoi](https://github.com/SamSswi),
+[Soorya George](https://github.com/SooryaGeorge7)
 
 This app was developed as part of Code Institute's Feb 2023 Hackathon for World NGO Day. The app was conceived, designed, developed and deployed by a team of 6 Code Institute students at various stages of learning, over the course of 5 days (February 16th-20th 2023).
 
 ## Project Management
 We used several tools for project management during this hackathon:
 
+- We used the agile methodology and voted in a Scrum master
 - We created a main git branch that all of our individual development branches pulled to
 - We used a Kanban board template from Github to manage our progress and timeline
 - Our team was split into two to form one frontend and one backend team that collaborated together and assigned tasks to on another
@@ -154,6 +155,7 @@ App features and the user stories/owner group they satisfy:
 
 ### Contact Page
 ![Contact](https://github.com/alphaClass6143/hackathon-2023-charityhub/blob/main/documentation/contact.png?raw=true)
+<b>Satisfies:</b>
 - As a user I would like to get in touch with the owners of the app so that I can ask queries or request a charity is added to their database.
 
 ### Blog Posts
