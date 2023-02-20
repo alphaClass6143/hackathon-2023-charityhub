@@ -8,6 +8,7 @@ Charity Hub is an app that works as a research tool for those interested in supp
 
 ## Table of Contents
 - Contributors
+- Project Management
 - User Experience (UX)
 - Features
 - Technologies Used
@@ -24,6 +25,16 @@ Charity Hub is an app that works as a research tool for those interested in supp
 [Soorya](https://github.com/SooryaGeorge7)
 
 This app was developed as part of Code Institute's Feb 2023 Hackathon for World NGO Day. The app was conceived, designed, developed and deployed by a team of 6 Code Institute students at various stages of learning, over the course of 5 days (February 16th-20th 2023).
+
+## Project Management
+We used several tools for project management during this hackathon:
+
+- We created a main git branch that all of our individual development branches pulled to
+- We used a Kanban board template from Github to manage our progress and timeline
+- Our team was split into two to form one frontend and one backend team that collaborated together and assigned tasks to on another
+- We used our slack channel to communicate effectively, including using polls and huddles to organise virtual meetings
+- Half of our team worked by night and the other half by day to maximise development time
+- Google drive and docs were used to create meeting agendas and minutes and to provide updates 
 
 ## User experience (UX)
 
@@ -58,6 +69,12 @@ This app was developed as part of Code Institute's Feb 2023 Hackathon for World 
 1. As an owner, I want to promote myself, so that users can find out more about me.
 
 2. As an owner, I want to promote the app's social media, where I share information about charities and what is happening in that sector, so that users can stay up to date.
+
+### Wireframes
+Three project contributors were assigned the task of creating and presenting wireframes to the group. We each created wireframes with varying technologies, and presented them to the group on a slack huddle. As a team, we picked our favourite features from all three presentation and made sure they met the user and owner group criteria. As a result, a blend of these wireframes were used as a design for the project.
+
+### Search Functionality
+As a group we decided on the logic of the categories and keywords that would be used to present different charities to the user. We made sure this was in line with our user stories. 
 
 ### Colour Scheme
 
@@ -157,6 +174,37 @@ App features and the user stories/owner group they satisfy:
 - [gunicorn](https://gunicorn.org/) - Used as a work model.
 - [python-dotenv](https://pypi.org/project/python-dotenv/) - Used as our python environment.
 
+## Testing
+
+### Validator Testing
+The W3C Markup Validator, CSS Validator Services, JSHint, PEP8 were used to validate the project throughout development and at the stage of deployment to ensure there were no syntax errors in the project. 
+
+### Lighthouse Test
+We tested the website via the Lighthouse tool at the point of deployment and our results for the home page were:
+
+<b>Desktop</b>
+Perfomance: 98
+Accessibility: 95
+Best Practice: 100
+SEO: 100
+
+<b>Mobile</b>
+Perfomance: 84
+Accessibility: 95
+Best Practice: 100
+SEO: 98
+
+### Manual Testing
+All 6 contributors of the project conducted manual testing on all user journeys through the app at the point of deployment. Issues were raised in our slack channel and were resolved before submission.
+
+### User Stories and Owner Requirements
+All user stories and owner group requirements are satisfied by the features developed and deployed on the website. This was achieved through design that centre's the user and owner groups needs. 
+### Browser Compatibility
+Testing has been carried out on the following browsers :
+Microsoft Edge, Google Chrome, Mozila Firefox, Safari, Opera
+### Responsive Design
+We can confirm this project is responsive and functions on all standard screen sizes using devtools device toolbar, and by testing on all our individual devices.
+
 ## Deployment
 
 You can fork the repository by following these steps:
@@ -235,3 +283,22 @@ python app.py
 10. In the manual deploy section click "Deploy branch"
 
 11. Optional: You can enable automatic deploys if you want the app to automatically update
+
+## Credits
+
+### Content
+- chatGPT was used to generate an individual description for every charity in the JSON file to same time
+
+### Code
+- These two routes in the app.py file are inspired from [Code Institute Flask Framework Thorin and Company project](https://github.com/Code-Institute-Solutions/FlaskFramework):
+@app.route('/charity/<company_name>')
+@app.route('/charities')
+
+- This online formatter was used to beautify code: https://beautifier.io/
+
+- Bootstrap documentation, Stack Overflow and chatGPT was used to help style html code
+
+### Media
+
+### Acknowledgments
+Thank you to the Code Institute Hack Team who organised this Hackathon.
