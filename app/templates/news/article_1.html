@@ -3,8 +3,48 @@
 {% block styles %}
   {{ super() }}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/article.css') }}">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 {% endblock %}
 
 {% block content %}
-<h1>Article 1a</h1>
+<main class="main">
+    <article class="article">
+        <h1>No patents on seeds: Tell our ministers to clarify the rules once and for all!</h1>
+        
+        <section class="article-video-container">
+            <iframe class="article-video" src="https://www.youtube.com/embed/3IMQ9rYh1gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>National ministers from the contracting states of the European Patent Office</p>
+        </section>
+        
+            
+        <h2>Petition</h2>
+
+        <p>We call for a conference of the ministers from the contracting states of the European Patent Office (EPO) to be held within one year, which must take prompt action to implement effective measures to stop patents on conventional plant and animal breeding. All possible measures must be taken on both a national and European level to stop patents on conventionally-bred plants and animals.</p>
+
+        <h2>Why is this important?</h2>
+
+        <p>A handful of corporations own our food. They decide what farmers can grow and how much we have to pay for it. Giant companies like: <br>
+            <strong>Bayer-Monsanto and Carlsberg can do this because they patent our seeds</strong> from melons and tomatoes to barley used to make beer. We campaigned for five years to get the office which decides on patents (European Patent Office - EPO), to ban patents on plants and animals. And we won! But<br>
+            <strong>companies are cancelling our win</strong> by taking advantage of where the rules are not 100 percent clear. All it would take to <br>
+            <strong>block these companies is for ministers to make patent rules watertight</strong>. The very rules they put in place thanks to public pressure from people like us. And we know we can do this because <br>
+            <strong>this time around, our community is even stronger</strong>. We also have 50 organisations including local breweries from across Europe joining the fight. <br>
+            <strong>Together let's call our ministers to schedule an official conference and take bold decisions</strong> that will stop companies from manipulating the rules. Add your name now!</p>
+
+        <br>
+
+        <h4>References:</h4>
+        
+        <ol>
+            <li>Today, only 10 corporations own about 75 % of the international seed market. The three largest, Bayer-Monsanto, DuPont and Syngenta, control over 50 % of the market. See, <a href="http://www.no-patents-on-beer.org/en/background/negative-effects">no-patents-on-beer.org</a></li>
+            <li><a href="https://www.no-patents-on-seeds.org/en/publications/report2021">www.no-patents-on-seeds.org</a>, <a href="https://www.no-patents-on-seeds.org/en/news/carlsberg2020">www.no-patents-on-seeds.org</a></li>
+            <li><a href="https://www.wemove.eu/big-win-patents">www.wemove.eu</a>, <a href="https://www.epo.org/law-practice/case-law-appeals/communications/2020/20200514.html">www.epo.org</a></li>
+            <li>While patents on conventionally bred plants are prohibited, patents on breeding by means of genetic engineering, including new methods such as genome editing can be patented. Companies deliberately blur the lines between genetic engineering and conventional breeding in their patent applications. In these cases, all plants (or animals) with the characteristics described in the patent, are claimed as an invention. In most cases, additional elements are introduced as ‘technical toppings’ to simulate real inventions. <a href="https://www.no-patents-on-seeds.org/en/publications/report2021">no-patents-on-seeds.org</a></li>
+        </ol>
+
+        <p><strong>Font:</strong><br><a href="https://act.wemove.eu/campaigns/nopatents-conference">act.wemove.eu</a></p>
+    </article>
+</main>
 {% endblock %}
